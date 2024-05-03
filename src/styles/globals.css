@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 240, 248, 255;
+  --background-end-rgb: 245, 248, 255;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  @apply antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 img,
 picture,

@@ -12,28 +12,3 @@
   text-decoration: none;
   @apply transition-all;
 }
-.sidebar_open {
-  width: 14em;
-}
-
-.sidebar_closed {
-  width: 0; /* Ou qualquer outra largura desejada para esconder a barra lateral */
-  /* Adicione outros estilos desejados para a barra lateral fechada */
-}
-
-/* Estiliza a barra que aparece ao passar o mouse */
-.navbar_content .navbar_nav .navLink::after {
-  content: ''; /* Cria um elemento pseudo-elemento após o link */
-  position: absolute; /* Posiciona o elemento em relação ao link */
-  left: 0; /* Alinha a barra à esquerda do link */
-  bottom: -5px; /* Alinha a barra na parte inferior do link */
-  width: 0; /* Define a largura inicial da barra como zero */
-  height: 2px; /* Define a altura da barra */
-  @apply bg-red-200;
-  transition: width 0.3s ease; /* Adiciona uma transição suave à largura */
-}
-
-/* Define o comportamento da barra ao passar o mouse sobre o link */
-.navbar_content .navbar_nav .navLink:hover::after {
-  width: 100%; /* Aumenta a largura da barra para 100% do link */
-}

@@ -7,38 +7,23 @@ interface Button {
   children?: React.ReactNode;
   href?: string;
   type?: 'button' | 'submit' | 'reset';
-  btn?: boolean;
   styled?: boolean;
   className?: string;
   icon?: React.ReactNode;
-  link?: boolean;
-  outline?: boolean;
   target?: string;
   onClick?: () => void;
 }
 const Button = ({
   children,
   href,
-  btn,
   styled,
   className,
   icon,
-  link,
-  outline,
   ...rest
 }: Button) => {
   let buttonClassName = styles.button;
   if (icon) {
     buttonClassName += ` ${styles.icon}`;
-  }
-  if (btn) {
-    buttonClassName += ` ${styles.btnStyle}`;
-  }
-  if (link) {
-    buttonClassName += ` ${styles.link}`;
-  }
-  if (outline) {
-    buttonClassName += ` ${styles.outline}`;
   }
   if (className) {
     buttonClassName = ` ${buttonClassName} ${className} `;

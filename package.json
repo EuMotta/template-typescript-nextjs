@@ -22,6 +22,7 @@
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix --cache-location ./node_modules/.cache/.eslintcache"
   },
   "dependencies": {
+    "@babel/core": "^7.24.5",
     "daisyui": "^4.10.2",
     "next": "14.0.4",
     "react": "^18",
@@ -61,7 +62,7 @@
     "lint-staged": "^15.2.0",
     "postcss": "^8",
     "prettier": "3.1.0",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.4.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5"
   }

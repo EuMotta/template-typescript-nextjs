@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
             {navLinks.map((item, index) => (
               <div key={index}>
                 <Button href={item.href} className={styles.navLink}>
-                  <p>{item.label}</p>
+                  {item.label}
                 </Button>
               </div>
             ))}
