@@ -1,0 +1,10 @@
+slate-50/* Modular Card */
+.modularFirstCard {
+  @apply border-slate-50 bg-gradient-to-b from-slate-50 w-auto rounded-xl border p-4;
+}
+.modularSecondCard {
+  @apply border-slate-50 bg-gradient-to-b from-slate-50 w-auto rounded-xl border p-4;
+}
+.modularThirdCard {
+  @apply border-slate-50 bg-gradient-to-b from-slate-50 w-auto rounded-xl border p-4;
+}

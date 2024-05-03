@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  @apply antialiased;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* destaque da fonte */
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+h4 {
+  font-weight: 500;
+}
+h5 {
+  font-weight: 500;
+}
+/* Para telas com largura de 1280px ou mais */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 2.5em;
+  } /* 40px */
+  h2 {
+    font-size: 2em;
+  } /* 32px */
+  h3 {
+    font-size: 1.75em;
+  } /* 28px */
+  h4 {
+    font-size: 1.5em;
+  } /* 24px */
+  h5 {
+    font-size: 1.25em;
+  } /* 20px */
+  p {
+    font-size: 1em;
+  } /* 16px */
+}
+
+/* Para telas com largura de 1024px até 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    font-size: 2em;
+  } /* 32px */
+  h2 {
+    font-size: 1.75em;
+  } /* 28px */
+  h3 {
+    font-size: 1.5em;
+  } /* 24px */
+  h4 {
+    font-size: 1.25em;
+  } /* 20px */
+  h5 {
+    font-size: 1em;
+  } /* 16px */
+  p {
+    font-size: 0.875em;
+  } /* 14px */
+}
+
+/* Para telas com largura de 768px até 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 1.75em;
+  } /* 28px */
+  h2 {
+    font-size: 1.5em;
+  } /* 24px */
+  h3 {
+    font-size: 1.25em;
+  } /* 20px */
+  h4 {
+    font-size: 1em;
+  } /* 16px */
+  h5 {
+    font-size: 0.875em;
+  } /* 14px */
+  p {
+    font-size: 0.75em;
+  } /* 12px */
+}
+
+/* Para telas com largura de 640px até 767px */
+@media (min-width: 640px) and (max-width: 767px) {
+  h1 {
+    font-size: 1.5em;
+  } /* 24px */
+  h2 {
+    font-size: 1.25em;
+  } /* 20px */
+  h3 {
+    font-size: 1em;
+  } /* 16px */
+  h4 {
+    font-size: 0.875em;
+  } /* 14px */
+  h5 {
+    font-size: 0.75em;
+  } /* 12px */
+  p {
+    font-size: 0.75em;
+  } /* 12px */
+}
+
+/* Para telas com largura menor que 640px */
+@media (max-width: 639px) {
+  h1 {
+    font-size: 1.25em;
+  } /* 20px */
+  h2 {
+    font-size: 1em;
+  } /* 16px */
+  h3 {
+    font-size: 0.875em;
+  } /* 14px */
+  h4 {
+    font-size: 0.75em;
+  } /* 12px */
+  h5 {
+    font-size: 0.75em;
+  } /* 12px */
+  p {
+    font-size: 0.75em;
+  } /* 12px */
+}
