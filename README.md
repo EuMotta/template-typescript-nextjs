@@ -32,7 +32,6 @@ Este template inclui as seguintes bibliotecas:
 - `lint-staged`: Utilizado em conjunto com o husky para executar o linting apenas nos arquivos que foram alterados.
 - `prettier`: Uma ferramenta para formatar automaticamente o código.
 - `tailwindcss`: Uma biblioteca para a construção de interfaces de usuário personalizadas.
-- `daisyui`: Plugin para tailwindcss que permite a criação de componentes de UI.
 - `xml-js`: Uma biblioteca para converter XML para JSON e vice-versa.
 
 Selecionei um conjunto de bibliotecas que acredito ser essencial para manter a consistência e eficiência no desenvolvimento, mantendo assim uma estrutura padronizada no código.
@@ -71,7 +70,7 @@ Não se esqueça de dar uma estrela ao projeto! Obrigado novamente!
 
 José Antonio Motta - [Linkedin](https://www.linkedin.com/in/jos%C3%A9-antonio-bueno-motta-61006a26b/)
 
-Link do projeto: [https://github.com/EuMotta/nextjs-template-typescript](https://github.com/EuMotta/nextjs-template-typescript)
+Link do projeto: [https://github.com/EuMotta/template-typescript-nextjs](https://github.com/EuMotta/template-typescript-nextjs)
 
 <p align="right">(<a href="#readme-top">Voltar</a>)</p>
 
