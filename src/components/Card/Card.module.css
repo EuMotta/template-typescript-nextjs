@@ -1,4 +1,0 @@
-/* Modular Card */
-.modularFirstCard {
-  @apply border-slate-200 bg-gradient-to-b from-slate-100  w-auto rounded-xl border p-4;
-}

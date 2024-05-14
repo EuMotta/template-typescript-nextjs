@@ -3,7 +3,6 @@
 import Image from 'next/image';
 
 import Button from '@/components/Button';
-import { ModularCard } from '@/components/Card/Card';
 import Container from '@/components/Container';
 export default function Home() {
   return (
@@ -20,13 +19,6 @@ export default function Home() {
             sizes="100vw"
             priority
           />
-          <div className="font-mono lg:w-1/2 ">
-            <ModularCard>
-              <p className="text-center">
-                Este é o template padrão que emprego em meus projetos.
-              </p>
-            </ModularCard>
-          </div>
         </div>
         <div className="flex justify-evenly">
           <Button href="https://github.com/EuMotta" target="_blank" styled>

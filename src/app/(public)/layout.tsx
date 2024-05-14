@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 
-import Header from '@/components/Header/Header';
-
 export const metadata: Metadata = {
   title: 'Home',
   description: 'Motta',
@@ -20,12 +18,5 @@ export default function PublicLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className="">
-      <div className="sticky top-0">
-        <Header />
-      </div>
-      <div>{children}</div>
-    </div>
-  );
+  return <div>{children}</div>;
 }
