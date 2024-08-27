@@ -1,9 +1,0 @@
-.skeleton_section {
-  @apply w-full h-screen items-center flex flex-col justify-center;
-}
-.skeleton_section .skeleton_content {
-  @apply flex gap-5 justify-center items-center;
-}
-.skeleton_section .skeleton_content .skeleton_loading {
-  @apply flex flex-col gap-20  justify-center items-center;
-}

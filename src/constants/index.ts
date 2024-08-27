@@ -1,10 +1,3 @@
-export const publicNavLinks = [
-  {
-    label: 'Home',
-    href: '/',
-  },
-];
-
 export const errorList = [
   { statusCode: 400, message: 'Bad Request' },
   { statusCode: 401, message: 'Unauthorized' },

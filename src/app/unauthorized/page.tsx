@@ -1,4 +1,4 @@
-import EmptyState from '@/components/EmptyState';
+import EmptyState from '@/components/common/empty-state';
 
 const UnauthorizeState = () => {
   return (

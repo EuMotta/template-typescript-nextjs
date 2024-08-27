@@ -1,6 +1,6 @@
 'use client';
 
-import EmptyState from '@/components/EmptyState';
+import EmptyState from '@/components/common/empty-state';
 
 interface ErrorStateProps {
   error: Error;

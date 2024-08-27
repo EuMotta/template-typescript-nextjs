@@ -1,6 +1,6 @@
 'use client';
 
-import EmptyState from '@/components/EmptyState/EmptyState';
+import EmptyState from '@/components/common/empty-state';
 
 export default function Error() {
   return (
