@@ -33,7 +33,7 @@ module.exports = function (plop) {
           },
         ];
       }
-      
+
       return actions;
     },
   });
@@ -51,7 +51,7 @@ module.exports = function (plop) {
         message: 'Caminho para ser armazenado:',
       },
     ],
-    actions: function (data) {
+    actions: function () {
       const basePath = 'src/templates/{{kebabCase route}}/{{kebabCase name}}';
 
       let actions = [];
@@ -72,13 +72,13 @@ module.exports = function (plop) {
       return actions;
     },
   });
-  plop.setGenerator('hook', {
-    description: 'Cria um novo hook para requisições HTTP',
+  plop.setGenerator('ApiHook', {
+    description: 'Cria um novo GET Hook para requisições HTTP',
     prompts: [
       {
         type: 'input',
         name: 'name',
-        message: 'Nome do hook:',
+        message: 'Nome do ApiHook:',
       },
       {
         type: 'list',
@@ -110,6 +110,11 @@ module.exports = function (plop) {
         name: 'endpoint',
         message: 'Informe o endpoint da API:',
       },
+      {
+        type: 'input',
+        name: 'route',
+        message: 'Informe onde na api o get será armazenado:',
+      },
     ],
     actions: function (data) {
       const paramList = data.hasParams
@@ -125,8 +130,8 @@ module.exports = function (plop) {
       return [
         {
           type: 'add',
-          path: `src/hooks/{{camelCase name}}.ts`,
-          templateFile: 'plop-templates/Hook.ts.hbs',
+          path: `src/app/api/{{kebabCase route}}/{{kebabCase name}}.ts`,
+          templateFile: 'plop-templates/ApiHook.ts.hbs',
           data: {
             paramInterfaceName,
             paramList,
