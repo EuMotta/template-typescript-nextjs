@@ -1,6 +1,6 @@
 import { NextMiddleware, NextResponse } from 'next/server';
 
-import { MiddlewareFactory } from './MiddlewareFactory';
+import { MiddlewareFactory } from './middleware-factory';
 /* Função para juntar os middlewares */
 export function stackMiddlewares(
   functions: MiddlewareFactory[] = [],

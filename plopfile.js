@@ -194,4 +194,37 @@ module.exports = function (plop) {
       ];
     },
   });
+  plop.setGenerator('Middleware', {
+    description: 'Cria um novo middleware',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Nome do middleware:',
+      },
+      {
+        type: 'list',
+        name: 'type',
+        message: 'Tipo de middleware:',
+        choices: ['Auth'],
+      },
+    ],
+    actions: function (data) {
+      const basePath = 'src/middlewares/{{kebabCase name}}';
+
+      let actions = [];
+
+      if (data.type === 'Auth') {
+        actions = [
+          {
+            type: 'add',
+            path: `${basePath}/index.tsx`,
+            templateFile: 'plop-templates/Middleware.ts.hbs',
+          },
+        ];
+      }
+
+      return actions;
+    },
+  });
 };

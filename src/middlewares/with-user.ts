@@ -1,6 +1,6 @@
 import { NextFetchEvent, NextRequest, NextResponse } from 'next/server';
 
-import { MiddlewareFactory } from './MiddlewareFactory';
+import { MiddlewareFactory } from './middleware-factory';
 
 export const auth: MiddlewareFactory = (next) => {
   return async (request: NextRequest, _next: NextFetchEvent) => {

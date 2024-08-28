@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Heading from '../header';
 import styles from './EmptyState.module.css';
 
-interface EmptyStateProps {
+export interface EmptyStateProps {
   title?: string;
   subtitle?: string;
   showReset?: boolean;
